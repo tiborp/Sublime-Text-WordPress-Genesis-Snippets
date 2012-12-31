@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+define( 'WP_DEBUG', false );
+define( 'ALTERNATE_WP_CRON', true );
+define( 'WP_POST_REVISIONS', 3 );
+define( 'FS_METHOD', 'direct' );
+define( 'EMPTY_TRASH_DAYS', 30 ); 
+define( 'WP_MEMORY_LIMIT', '128M' );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>wpconfig-extra</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+</snippet>
