@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+remove_action( 'genesis_meta', 'genesis_load_favicon' );
+add_action( 'genesis_meta', '${1:prefix}_custom_favicon' );
+/**
+ * Remove Genesis Favicon and Replace with own
+ *
+ * @access public
+ * @return void
+ */
+function ${2:prefix}_custom_favicon() {
+    $favicon = '{3:http://wpdimension.com/}favicon.ico';
+
+    echo "\n".'<!--The Favicon-->'."\n";
+    echo '<link rel="Shortcut Icon" href="'. esc_url( $favicon ). '" type="image/x-icon" />'."\n";
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

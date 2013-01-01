@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+add_filter( 'genesis_footer_creds_text', '${1:prefix}_footer_creds_filter' );
+/**
+ * Modifying Genesis Footer Credit section.
+ *
+ * @access public
+ * @param mixed $creds
+ * @return void
+ */
+function ${2:prefix}_footer_creds_filter( $creds ) {
+
+    $creds = '${3:[footer_copyright]} ${4:[footer_childtheme_link]} ${5:[footer_loginout]}';
+
+    return $creds;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>Genesis Footer Creds Text</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+</snippet>
