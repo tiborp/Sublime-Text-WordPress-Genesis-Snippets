@@ -13,7 +13,7 @@ function remove_genesis_widgets() {
 }
 ]]></content>
 	<tabTrigger>urwidgets</tabTrigger>
-    <description>Genesis Unregister Widgets</description>
+	<description>Genesis Unregister Widgets</description>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
