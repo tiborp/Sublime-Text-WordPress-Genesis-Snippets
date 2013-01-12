@@ -1,8 +1,18 @@
 <snippet>
-	<content><![CDATA[
-// Remove Genesis widgets
-add_action( 'widgets_init', 'remove_genesis_widgets', 20 );
-function remove_genesis_widgets() {
+    <content><![CDATA[
+add_action( 'widgets_init', '${1:prefix}_remove_genesis_widgets', 20 );
+/**
+ * Remove the Genesis widgets from the Dashboard's Widgets page.
+ *
+ * @package genesis
+ * @access public
+ * @return void
+ * @author ${2:author}
+ *
+ * @since ${3:version-number}
+ *
+ */
+function $1_remove_genesis_widgets() {
     unregister_widget( 'Genesis_eNews_Updates' );
     unregister_widget( 'Genesis_Featured_Page' );
     unregister_widget( 'Genesis_User_Profile_Widget' );
@@ -11,6 +21,8 @@ function remove_genesis_widgets() {
     unregister_widget( 'Genesis_Featured_Post' );
     unregister_widget( 'Genesis_Latest_Tweets_Widget' );
 }
+
+$0
 ]]></content>
 	<tabTrigger>urwidgets</tabTrigger>
 	<description>Genesis Unregister Widgets</description>
